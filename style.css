@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background: repeating-linear-gradient(
+      #fefefe,
+      #fefefe 28px,
+      #d3e0ea 29px,
+      #fefefe 30px
+    );
+    background-size: 100% 30px;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #222;
+    text-shadow: 1px 1px 0 #ccc;
+  }
+  
+  .game-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px dashed #d3e0ea;
+    border-left: 6px solid red;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .player-info input {
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1rem;
+    border: 1px dashed #888;
+    background-color: #fafafa;
+    width: 100%;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ffd700;
+    border: 2px dashed #333;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffa500;
+  }
+  
+  .board {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px dashed #333;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .cell.X {
+    color: navy;
+  }
+  
+  .cell.O {
+    color: crimson;
+  }
+  
+  .scoreboard {
+    margin-top: 25px;
+    background-color: #fafafa;
+    border: 2px dashed #888;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  #reset-button {
+    background-color: #90ee90;
+    color: #333;
+    border: 2px dashed #333;
+  }
+  
+  #reset-button:hover {
+    background-color: #32cd32;
+  }
+  
+  #game-board {
+    display: none;
+  }
+  
